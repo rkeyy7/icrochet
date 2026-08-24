@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# database (solo vive en el equipo de administración)
+/prisma/dev.db
+*.db-journal
+
+# fotos subidas desde el panel (se copian a public/productos al publicar)
+/uploads/
+
+# uploads de productos (viven solo en este equipo, igual que la base de datos)
+/uploads/

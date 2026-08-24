@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fdf6fb"/>
+      <stop offset="100%" stop-color="#ddc6df"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#fondo)"/>
+  <circle cx="300" cy="280" r="170" fill="#ffffff" opacity="0.6"/>
+  <text x="300" y="340" font-size="190" text-anchor="middle">💐</text>
+  <text x="80" y="130" font-size="42">🌷</text>
+  <text x="495" y="520" font-size="42">✨</text>
+  <text x="300" y="560" font-size="30" text-anchor="middle" fill="#704973" font-family="sans-serif" font-weight="bold">iCrochet</text>
+</svg>

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "cj-conejita-luna-001",
+    "nombre": "Conejita Luna",
+    "descripcion": "Amigurumi tejido a mano en hilo algodón suave. La compañera perfecta para dormir y decorar. Aprox. 20 cm de alto.",
+    "precio": 45000,
+    "imagenes": [
+      "/img/conejita-luna.svg"
+    ]
+  },
+  {
+    "id": "cj-osito-miel-002",
+    "nombre": "Osito Miel",
+    "descripcion": "Tierno osito amigurumi color miel, tejido punto a punto con mucho amor. Ideal para regalar. Aprox. 18 cm.",
+    "precio": 42000,
+    "imagenes": [
+      "/img/osito-miel.svg"
+    ]
+  },
+  {
+    "id": "cj-ramo-tulipanes-003",
+    "nombre": "Ramo de Tulipanes Eternos",
+    "descripcion": "Ramo de 7 tulipanes tejidos que nunca se marchitan. Colores personalizables según tu ocasión especial.",
+    "precio": 68000,
+    "imagenes": [
+      "/img/ramo-tulipanes.svg"
+    ]
+  },
+  {
+    "id": "cmt7nyfm60000f8vd63g094oi",
+    "nombre": "bello gatito",
+    "descripcion": "tejido a mano de algodon",
+    "precio": 30001,
+    "imagenes": [
+      "/productos/cmt7nyfm60000f8vd63g094oi/1ee96d9c-f3ae-46bd-af5c-fff222f8c723.jpg",
+      "/productos/cmt7nyfm60000f8vd63g094oi/5f0669ab-7a0d-4c00-adf5-0a77f8e0315b.jpg",
+      "/productos/cmt7nyfm60000f8vd63g094oi/2e8872d6-bc62-420d-81bb-7f2828a383ae.jpg",
+      "/productos/cmt7nyfm60000f8vd63g094oi/08d56c8e-228f-4076-9463-16949fb03dbf.jpg"
+    ]
+  }
+]

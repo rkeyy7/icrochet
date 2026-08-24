@@ -1,0 +1,26 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../lib/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Product {
+  id          String           @id @default(cuid())
+  nombre      String
+  descripcion String
+  precio      Int
+  imagenes    ImagenProducto[]
+}
+
+model ImagenProducto {
+  id         String  @id @default(cuid())
+  url        String
+  orden      Int     @default(0)
+  producto   Product @relation(fields: [productoId], references: [id], onDelete: Cascade)
+  productoId String
+
+  @@index([productoId])
+}
