@@ -47,5 +47,8 @@ next-env.d.ts
 # fotos subidas desde el panel (se copian a public/productos al publicar)
 /uploads/
 
+# carpeta original de fotos importadas
+/ramos_Amigurumis/
+
 # uploads de productos (viven solo en este equipo, igual que la base de datos)
 /uploads/

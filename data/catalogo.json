@@ -1,41 +1,212 @@
 [
   {
-    "id": "cj-conejita-luna-001",
-    "nombre": "Conejita Luna",
-    "descripcion": "Amigurumi tejido a mano en hilo algodón suave. La compañera perfecta para dormir y decorar. Aprox. 20 cm de alto.",
-    "precio": 45000,
+    "id": "cmt7s9vkf6a2e3cb21c71",
+    "nombre": "Amigurumi Osito Cariñosito",
+    "descripcion": "Amigurumi Osito Cariñosito, tejido a mano al crochet punto a punto con hilo suave y mucho amor. Pieza única con acabados cuidados, perfecta para regalar o decorar. Colores y detalles personalizables según tu ocasión especial.",
+    "precio": 115000,
     "imagenes": [
-      "/img/conejita-luna.svg"
+      "/productos/cmt7s9vkf6a2e3cb21c71/cb7f74b0-46d8-4e6f-b888-3bd34beec73f.png"
     ]
   },
   {
-    "id": "cj-osito-miel-002",
-    "nombre": "Osito Miel",
-    "descripcion": "Tierno osito amigurumi color miel, tejido punto a punto con mucho amor. Ideal para regalar. Aprox. 18 cm.",
-    "precio": 42000,
+    "id": "cmt7s9vl1d58be5060377",
+    "nombre": "Amigurumi Patito",
+    "descripcion": "Amigurumi Patito, tejido a mano al crochet punto a punto con hilo suave y mucho amor. Pieza única con acabados cuidados, perfecta para regalar o decorar. Colores y detalles personalizables según tu ocasión especial.",
+    "precio": 75000,
     "imagenes": [
-      "/img/osito-miel.svg"
+      "/productos/cmt7s9vl1d58be5060377/9f5731b5-cb4d-42a4-a0ea-ff48e30534ab.png"
     ]
   },
   {
-    "id": "cj-ramo-tulipanes-003",
-    "nombre": "Ramo de Tulipanes Eternos",
-    "descripcion": "Ramo de 7 tulipanes tejidos que nunca se marchitan. Colores personalizables según tu ocasión especial.",
+    "id": "cmt7s9vl6e4a5c255aef1",
+    "nombre": "Amigurumi Snoopy",
+    "descripcion": "Ramo tejido a mano al crochet con flores eternas que nunca se marchitan. Combinaciones y colores personalizables según tu ocasión especial.",
+    "precio": 70000,
+    "imagenes": [
+      "/productos/cmt7s9vl6e4a5c255aef1/079b2e3a-5ab3-4f64-95fb-2b300b7dd384.png"
+    ]
+  },
+  {
+    "id": "cmt7s9vl91d2cf5703392",
+    "nombre": "Amigurumi Virgen de Guadalupe",
+    "descripcion": "Amigurumi Virgen de Guadalupe, tejido a mano al crochet punto a punto con hilo suave y mucho amor. Pieza única con acabados cuidados, perfecta para regalar o decorar. Colores y detalles personalizables según tu ocasión especial.",
+    "precio": 75000,
+    "imagenes": [
+      "/productos/cmt7s9vl91d2cf5703392/43e0fb48-fd57-4fce-9916-bc99ad4cd92f.png",
+      "/productos/cmt7s9vl91d2cf5703392/cb57afcf-76bc-4b8d-b83a-d16d34b9f0bd.png"
+    ]
+  },
+  {
+    "id": "cmt7s9vlg25b02d7d22db",
+    "nombre": "Bouquet Brown",
+    "descripcion": "Ramo tejido a mano al crochet con flores eternas que nunca se marchitan. Combinaciones y colores personalizables según tu ocasión especial.",
+    "precio": 75000,
+    "imagenes": [
+      "/productos/cmt7s9vlg25b02d7d22db/859cd470-7620-4fe8-81ba-1ab040aebb12.png",
+      "/productos/cmt7s9vlg25b02d7d22db/5ae77e2c-4ec1-4999-ab1c-5eb4e6526891.png"
+    ]
+  },
+  {
+    "id": "cmt7s9vnaade3f11815cc",
+    "nombre": "Bouquet Fun",
+    "descripcion": "Ramo tejido a mano al crochet con flores eternas que nunca se marchitan. Combinaciones y colores personalizables según tu ocasión especial.",
+    "precio": 65000,
+    "imagenes": [
+      "/productos/cmt7s9vnaade3f11815cc/e98fe0fc-edab-4849-861e-9b023743e09d.png"
+    ]
+  },
+  {
+    "id": "cmt7s9vne09978b0a9b44",
+    "nombre": "Bouquet Funny",
+    "descripcion": "Ramo tejido a mano al crochet con flores eternas que nunca se marchitan. Combinaciones y colores personalizables según tu ocasión especial.",
     "precio": 68000,
     "imagenes": [
-      "/img/ramo-tulipanes.svg"
+      "/productos/cmt7s9vne09978b0a9b44/126a5ce2-7327-460a-b739-e9c05bf79879.png"
     ]
   },
   {
-    "id": "cmt7nyfm60000f8vd63g094oi",
-    "nombre": "bello gatito",
-    "descripcion": "tejido a mano de algodon",
-    "precio": 30001,
+    "id": "cmt7s9vnhd39fca19bbfa",
+    "nombre": "Bouquet Guadalupe",
+    "descripcion": "Ramo tejido a mano al crochet con flores eternas que nunca se marchitan. Combinaciones y colores personalizables según tu ocasión especial.",
+    "precio": 125000,
     "imagenes": [
-      "/productos/cmt7nyfm60000f8vd63g094oi/1ee96d9c-f3ae-46bd-af5c-fff222f8c723.jpg",
-      "/productos/cmt7nyfm60000f8vd63g094oi/5f0669ab-7a0d-4c00-adf5-0a77f8e0315b.jpg",
-      "/productos/cmt7nyfm60000f8vd63g094oi/2e8872d6-bc62-420d-81bb-7f2828a383ae.jpg",
-      "/productos/cmt7nyfm60000f8vd63g094oi/08d56c8e-228f-4076-9463-16949fb03dbf.jpg"
+      "/productos/cmt7s9vnhd39fca19bbfa/057a9f96-6677-4c0d-9ecf-8cfb66a0cb8c.png",
+      "/productos/cmt7s9vnhd39fca19bbfa/0f297cfd-7294-4ac7-9b53-07a3fc86af23.png"
+    ]
+  },
+  {
+    "id": "cmt7s9vnua33fa8874e6e",
+    "nombre": "Bouquet Rapunzel",
+    "descripcion": "Ramo tejido a mano al crochet con flores eternas que nunca se marchitan. Combinaciones y colores personalizables según tu ocasión especial.",
+    "precio": 95000,
+    "imagenes": [
+      "/productos/cmt7s9vnua33fa8874e6e/06c30186-398d-4a60-8109-b47b141d9f3a.png",
+      "/productos/cmt7s9vnua33fa8874e6e/dd0eb9f2-f02d-43ea-a45d-0f75339fae80.png"
+    ]
+  },
+  {
+    "id": "cmt7s9vo27cf4f6605e1f",
+    "nombre": "Bouquet Snoopy",
+    "descripcion": "Ramo tejido a mano al crochet con flores eternas que nunca se marchitan. Combinaciones y colores personalizables según tu ocasión especial.",
+    "precio": 125000,
+    "imagenes": [
+      "/productos/cmt7s9vo27cf4f6605e1f/280cdf4b-5c7a-4aa1-b171-b45ebef3818f.png",
+      "/productos/cmt7s9vo27cf4f6605e1f/642cebb1-5a7a-4e2f-8c80-61666f41cfb2.png",
+      "/productos/cmt7s9vo27cf4f6605e1f/449ebb5c-664e-489d-ba5d-882e83f3aff1.png"
+    ]
+  },
+  {
+    "id": "cmt7s9vohaf5e43a873bc",
+    "nombre": "Bouquet Spiderman",
+    "descripcion": "Ramo tejido a mano al crochet con flores eternas que nunca se marchitan. Combinaciones y colores personalizables según tu ocasión especial.",
+    "precio": 185000,
+    "imagenes": [
+      "/productos/cmt7s9vohaf5e43a873bc/7dcca13b-1901-41cc-8132-481b5bfb0821.png",
+      "/productos/cmt7s9vohaf5e43a873bc/a0567940-36a4-4afd-8f6c-f6d4df4ff7a6.png"
+    ]
+  },
+  {
+    "id": "cmt7s9voq4f2226dde795",
+    "nombre": "Bouquet Sweet Purple",
+    "descripcion": "Ramo tejido a mano al crochet con flores eternas que nunca se marchitan. Combinaciones y colores personalizables según tu ocasión especial.",
+    "precio": 185000,
+    "imagenes": [
+      "/productos/cmt7s9voq4f2226dde795/e5cd39bd-e664-4f05-9e58-ce6a113c6364.png"
+    ]
+  },
+  {
+    "id": "cmt7s9vovbb57432fdf53",
+    "nombre": "Bouquet Sweet Red",
+    "descripcion": "Ramo tejido a mano al crochet con flores eternas que nunca se marchitan. Combinaciones y colores personalizables según tu ocasión especial.",
+    "precio": 185000,
+    "imagenes": [
+      "/productos/cmt7s9vovbb57432fdf53/47b84a59-6bc7-4a78-9c43-9b4b6f1d45d6.png"
+    ]
+  },
+  {
+    "id": "cmt7s9vp979c451232fa4",
+    "nombre": "Bouquet Tulipanes Sweet Red",
+    "descripcion": "Ramo tejido a mano al crochet con flores eternas que nunca se marchitan. Combinaciones y colores personalizables según tu ocasión especial.",
+    "precio": 95000,
+    "imagenes": [
+      "/productos/cmt7s9vp979c451232fa4/f995ff7b-36d8-415d-b232-637d29e108bc.png"
+    ]
+  },
+  {
+    "id": "cmt7s9voze7eee11f6643",
+    "nombre": "Bouquet Tulipán Corazón",
+    "descripcion": "Ramo tejido a mano al crochet con flores eternas que nunca se marchitan. Combinaciones y colores personalizables según tu ocasión especial.",
+    "precio": 39000,
+    "imagenes": [
+      "/productos/cmt7s9voze7eee11f6643/1dc24081-b985-4e95-b29f-0c237f521541.png",
+      "/productos/cmt7s9voze7eee11f6643/ce152183-30e5-4c16-a0df-89e1500aeea5.png"
+    ]
+  },
+  {
+    "id": "cmt7s9vlm5b75f4c3bb30",
+    "nombre": "Bouquet de 1 girasol",
+    "descripcion": "Ramo tejido a mano al crochet con flores eternas que nunca se marchitan. Combinaciones y colores personalizables según tu ocasión especial.",
+    "precio": 40000,
+    "imagenes": [
+      "/productos/cmt7s9vlm5b75f4c3bb30/2e81b4bc-b331-48a4-b4b9-e1c9ac555818.png"
+    ]
+  },
+  {
+    "id": "cmt7s9vlt743099330370",
+    "nombre": "Bouquet de 1 rosa",
+    "descripcion": "Ramo tejido a mano al crochet con flores eternas que nunca se marchitan. Combinaciones y colores personalizables según tu ocasión especial.",
+    "precio": 39000,
+    "imagenes": [
+      "/productos/cmt7s9vlt743099330370/ebbdd71e-405d-49d6-9db1-dc4439079c4e.png",
+      "/productos/cmt7s9vlt743099330370/97b71ae0-d891-44c0-a3ad-46cd91963aa5.png"
+    ]
+  },
+  {
+    "id": "cmt7s9vm443111c8e587a",
+    "nombre": "Bouquet de 3 girasoles",
+    "descripcion": "Ramo tejido a mano con 3 girasoles que nunca se marchitan. Cada flor es única, con acabados cuidados y colores personalizables según tu ocasión especial.",
+    "precio": 78000,
+    "imagenes": [
+      "/productos/cmt7s9vm443111c8e587a/2b494f2f-24b3-4393-ad65-fea739733bab.png"
+    ]
+  },
+  {
+    "id": "cmt7s9vm928c9a2756ded",
+    "nombre": "Bouquet de 3 tulipanes",
+    "descripcion": "Ramo tejido a mano con 3 tulipanes que nunca se marchitan. Cada flor es única, con acabados cuidados y colores personalizables según tu ocasión especial.",
+    "precio": 65000,
+    "imagenes": [
+      "/productos/cmt7s9vm928c9a2756ded/c97060a6-2695-4418-8af9-f192df673541.png"
+    ]
+  },
+  {
+    "id": "cmt7s9vmea04763d94aaf",
+    "nombre": "Bouquet de 4 girasoles",
+    "descripcion": "Ramo tejido a mano con 4 girasoles que nunca se marchitan. Cada flor es única, con acabados cuidados y colores personalizables según tu ocasión especial.",
+    "precio": 105000,
+    "imagenes": [
+      "/productos/cmt7s9vmea04763d94aaf/57163f5e-c650-44ee-bde2-d8b0946e7b61.png"
+    ]
+  },
+  {
+    "id": "cmt7s9vmh1130dda6485c",
+    "nombre": "Bouquet de 6 rosas",
+    "descripcion": "Ramo tejido a mano con 6 rosas que nunca se marchitan. Cada flor es única, con acabados cuidados y colores personalizables según tu ocasión especial.",
+    "precio": 115000,
+    "imagenes": [
+      "/productos/cmt7s9vmh1130dda6485c/82bd2d5f-f689-4ba7-8ceb-79a03d6747d0.png",
+      "/productos/cmt7s9vmh1130dda6485c/09ef129d-47d0-419a-b804-bd0fe00b77ae.png",
+      "/productos/cmt7s9vmh1130dda6485c/996bb795-0efa-4a79-b805-d4cc5289445c.png"
+    ]
+  },
+  {
+    "id": "cmt7s9vmx82b7653e542a",
+    "nombre": "Bouquet de 6 tulipanes",
+    "descripcion": "Ramo tejido a mano con 6 tulipanes que nunca se marchitan. Cada flor es única, con acabados cuidados y colores personalizables según tu ocasión especial.",
+    "precio": 95000,
+    "imagenes": [
+      "/productos/cmt7s9vmx82b7653e542a/7f9f159f-0c7a-404c-b3e6-26b9c8ad97d4.png",
+      "/productos/cmt7s9vmx82b7653e542a/a23bba30-940f-48fa-b330-725b68b2c107.png"
     ]
   }
 ]
