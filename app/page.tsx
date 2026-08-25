@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
-import { ArrowUpRight, Heart, Sparkles } from "lucide-react";
 import { formatoCOP, urlWhatsApp } from "@/lib/formato";
 import { catalogo, imagenPortada } from "@/lib/catalogo";
 
@@ -21,7 +20,7 @@ export default function HomePage() {
       <section className="mx-auto grid w-full max-w-6xl gap-10 px-4 pb-16 pt-10 sm:px-6 sm:pt-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-16 lg:pb-24">
         <div className="reveal-up max-w-2xl">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-lila-200 bg-white/70 px-4 py-2 text-xs font-extrabold uppercase tracking-[0.22em] text-lila-700 shadow-sm backdrop-blur-sm">
-            <Sparkles className="size-4" aria-hidden="true" />
+            <span className="size-2 rounded-full bg-rosa-300" aria-hidden="true" />
             Hecho para regalar
           </div>
           <h1 className="max-w-xl text-balance text-5xl font-black leading-[0.98] tracking-[-0.055em] text-lila-900 sm:text-7xl">
@@ -32,10 +31,10 @@ export default function HomePage() {
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link href="/catalogo" className="shine inline-flex items-center gap-2 rounded-full bg-lila-700 px-6 py-3.5 text-sm font-extrabold text-white shadow-xl shadow-lila-300/60 transition hover:-translate-y-1 hover:bg-lila-800">
-              Explorar colección <ArrowUpRight className="size-4" aria-hidden="true" />
+              Explorar colección
             </Link>
             <span className="inline-flex items-center gap-2 px-3 py-3 text-sm font-bold text-lila-700">
-              <Heart className="size-4 fill-rosa-200 text-lila-600" aria-hidden="true" />
+              <span className="size-2 rounded-full bg-rosa-300" aria-hidden="true" />
               Creado con intención
             </span>
           </div>
@@ -68,7 +67,7 @@ export default function HomePage() {
       <section className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div><p className="text-xs font-extrabold uppercase tracking-[0.25em] text-lila-600">La colección</p><h2 className="mt-2 text-3xl font-black tracking-tight text-lila-900 sm:text-4xl">Pequeñas piezas, grandes emociones.</h2></div>
-          <Link href="/catalogo" className="inline-flex items-center gap-1 text-sm font-extrabold text-lila-700 transition hover:gap-2">Ver todo <ArrowUpRight className="size-4" aria-hidden="true" /></Link>
+          <Link href="/catalogo" className="inline-flex items-center gap-1 text-sm font-extrabold text-lila-700 transition hover:gap-2">Ver todo</Link>
         </div>
         {productosDestacados.length > 0 ? <div className="mt-8 grid gap-5 sm:grid-cols-3">{productosDestacados.map((producto, index) => <Link key={producto.id} href={`/producto/${producto.id}`} className="reveal-up group overflow-hidden rounded-3xl border border-white/80 bg-white shadow-lg shadow-lila-200/40 transition duration-500 hover:-translate-y-2 hover:shadow-2xl" style={{ animationDelay: `${index * 100}ms` }}><div className="relative aspect-[0.95] overflow-hidden bg-lila-100"><Image src={imagenPortada(producto)} alt={producto.nombre} fill sizes="(max-width: 640px) 100vw, 33vw" className="object-cover transition duration-700 group-hover:scale-105" /></div><div className="flex items-center justify-between gap-3 p-5"><div><h3 className="font-black text-lila-900">{producto.nombre}</h3><p className="mt-1 line-clamp-1 text-sm text-neutral-500">{producto.descripcion}</p></div><span className="shrink-0 text-sm font-black text-lila-700">{formatoCOP.format(producto.precio)}</span></div></Link>)}</div> : <p className="mt-8 rounded-2xl border border-dashed border-lila-200 p-5 text-sm text-lila-800">Estamos preparando nuevas piezas para el catálogo.</p>}
       </section>
@@ -77,7 +76,7 @@ export default function HomePage() {
         <p className="text-xs font-extrabold uppercase tracking-[0.28em] text-rosa-200">Tu idea puede hacerse hilo</p>
         <h2 className="mx-auto mt-4 max-w-2xl text-balance text-3xl font-black tracking-tight sm:text-5xl">Cuéntanos a quién quieres sorprender.</h2>
         <p className="mx-auto mt-5 max-w-xl leading-7 text-lila-100">Te acompañamos a elegir colores, tamaño y detalles para crear una pieza que tenga tu historia.</p>
-        <a href={urlWhatsApp("una pieza personalizada")} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-extrabold text-lila-800 transition hover:-translate-y-1 hover:bg-rosa-100">Hablar por WhatsApp <ArrowUpRight className="size-4" aria-hidden="true" /></a>
+        <a href={urlWhatsApp("una pieza personalizada")} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-extrabold text-lila-800 transition hover:-translate-y-1 hover:bg-rosa-100">Hablar por WhatsApp</a>
       </section>
     </div>
   );
