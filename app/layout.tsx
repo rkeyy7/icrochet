@@ -5,6 +5,7 @@ import Link from "next/link";
 import { logoutAdmin } from "@/app/auth/actions";
 import { getAdminSession } from "@/lib/auth/session";
 import { WHATSAPP_NUMERO } from "@/lib/formato";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const nunito = Nunito({
@@ -109,6 +110,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
             </p>
           </div>
         </footer>
+        <Analytics />
       </body>
     </html>
   );
