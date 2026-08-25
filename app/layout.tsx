@@ -26,7 +26,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
   const adminSession = await getAdminSession();
 
   return (
-    <html lang="es" suppressHydrationWarning className={`${nunito.variable} h-full antialiased`}>
+    <html lang="es" suppressHydrationWarning className={`${nunito.variable} h-full bg-lila-50 antialiased`}>
       <body suppressHydrationWarning className="flex min-h-full flex-col">
         <header className="sticky top-0 z-30 border-b border-white/35 bg-lila-500/85 text-white shadow-lg shadow-lila-900/10 backdrop-blur-md">
           <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4">
