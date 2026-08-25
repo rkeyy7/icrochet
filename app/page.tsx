@@ -1,162 +1,84 @@
 import Link from "next/link";
-import type { Metadata } from "next";
 import Image from "next/image";
-import { formatoCOP } from "@/lib/formato";
+import type { Metadata } from "next";
+import { ArrowUpRight, Heart, Sparkles } from "lucide-react";
+import { formatoCOP, urlWhatsApp } from "@/lib/formato";
 import { catalogo, imagenPortada } from "@/lib/catalogo";
 
 export const metadata: Metadata = {
-  title: "iCrochet | Regalos Tejidos a Mano",
+  title: "iCrochet | Regalos tejidos a mano",
   description:
-    "Landing oficial de iCrochet: amigurumis y ramos tejidos personalizados, hechos a mano con amor y detalle.",
-  openGraph: {
-    title: "iCrochet | Regalos Tejidos a Mano",
-    description:
-      "Descubre piezas tejidas personalizadas para regalar momentos inolvidables.",
-    type: "website",
-    locale: "es_CO",
-  },
+    "Amigurumis y ramos tejidos personalizados, hechos a mano con amor y detalle.",
 };
 
-export default async function HomePage() {
+export default function HomePage() {
   const productosDestacados = [...catalogo]
     .sort((a, b) => a.nombre.localeCompare(b.nombre, "es"))
     .slice(0, 3);
-  const totalProductos = catalogo.length;
 
   return (
-    <section className="mx-auto w-full max-w-6xl px-4 py-10 sm:py-14">
-      <div className="relative overflow-hidden rounded-[2.25rem] border border-white/50 bg-gradient-to-br from-lila-100/90 via-white to-[#ffe7ef] p-8 shadow-2xl shadow-lila-200/70 sm:p-12">
-        <div className="float-slow pointer-events-none absolute -left-14 top-8 h-36 w-36 rounded-full bg-[#ffd5e6]/70 blur-3xl" />
-        <div className="float-slow pointer-events-none absolute -right-16 bottom-0 h-44 w-44 rounded-full bg-lila-200/70 blur-3xl" style={{ animationDelay: "400ms" }} />
-
-        <p className="reveal-up text-xs font-extrabold uppercase tracking-[0.3em] text-lila-700" style={{ animationDelay: "80ms" }}>
-          Colección artesanal
-        </p>
-        <h1 className="reveal-up mt-3 max-w-3xl text-4xl font-black text-lila-900 sm:text-6xl" style={{ animationDelay: "140ms" }}>
-          Amigurumis y ramos tejidos que convierten momentos en recuerdos
-        </h1>
-        <p className="reveal-up mt-4 max-w-2xl text-lg font-medium text-neutral-600" style={{ animationDelay: "220ms" }}>
-          Diseños hechos a mano, personalizados y llenos de detalle. Descubre el catálogo y encarga una pieza única para ti o para regalar.
-        </p>
-
-        <div className="reveal-up mt-7 flex flex-wrap gap-3" style={{ animationDelay: "280ms" }}>
-          <span className="rounded-full border border-lila-200 bg-white/75 px-4 py-2 text-sm font-bold text-lila-700">Diseños personalizados</span>
-          <span className="rounded-full border border-lila-200 bg-white/75 px-4 py-2 text-sm font-bold text-lila-700">Acabado premium</span>
-          <span className="rounded-full border border-lila-200 bg-white/75 px-4 py-2 text-sm font-bold text-lila-700">Atención por WhatsApp</span>
-        </div>
-
-        <div className="reveal-up mt-8 flex flex-wrap items-center gap-3" style={{ animationDelay: "340ms" }}>
-          <Link
-            href="/catalogo"
-            className="shine rounded-2xl bg-lila-600 px-6 py-3 text-sm font-extrabold text-white shadow-lg shadow-lila-300/70 transition hover:-translate-y-0.5 hover:bg-lila-700"
-          >
-            Ver catálogo
-          </Link>
-          <span className="text-sm font-semibold text-neutral-600">Entrega con amor en cada puntada</span>
-        </div>
-
-        <div className="reveal-up mt-8 grid gap-3 sm:grid-cols-3" style={{ animationDelay: "420ms" }}>
-          <div className="rounded-2xl border border-white/70 bg-white/70 px-4 py-3">
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-lila-700">Piezas activas</p>
-            <p className="mt-1 text-2xl font-black text-lila-900">{totalProductos}</p>
+    <div className="overflow-hidden">
+      <section className="mx-auto grid w-full max-w-6xl gap-10 px-4 pb-16 pt-10 sm:px-6 sm:pt-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-16 lg:pb-24">
+        <div className="reveal-up max-w-2xl">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-lila-200 bg-white/70 px-4 py-2 text-xs font-extrabold uppercase tracking-[0.22em] text-lila-700 shadow-sm backdrop-blur-sm">
+            <Sparkles className="size-4" aria-hidden="true" />
+            Hecho para regalar
           </div>
-          <div className="rounded-2xl border border-white/70 bg-white/70 px-4 py-3">
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-lila-700">Atención</p>
-            <p className="mt-1 text-2xl font-black text-lila-900">1:1</p>
-          </div>
-          <div className="rounded-2xl border border-white/70 bg-white/70 px-4 py-3">
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-lila-700">Personalización</p>
-            <p className="mt-1 text-2xl font-black text-lila-900">Total</p>
-          </div>
-        </div>
-      </div>
-
-      <div className="mt-10 grid gap-4 sm:grid-cols-3">
-        <article className="reveal-up rounded-3xl border border-white/60 bg-white/80 p-6 shadow-lg" style={{ animationDelay: "120ms" }}>
-          <h2 className="text-lg font-black text-lila-900">Hecho a mano</h2>
-          <p className="mt-2 text-sm text-neutral-600">Cada producto es tejido cuidadosamente para mantener calidad y ternura.</p>
-        </article>
-        <article className="reveal-up rounded-3xl border border-white/60 bg-white/80 p-6 shadow-lg" style={{ animationDelay: "180ms" }}>
-          <h2 className="text-lg font-black text-lila-900">Personalización</h2>
-          <p className="mt-2 text-sm text-neutral-600">Colores, tamaños y detalles pensados para adaptarse a tu idea.</p>
-        </article>
-        <article className="reveal-up rounded-3xl border border-white/60 bg-white/80 p-6 shadow-lg" style={{ animationDelay: "240ms" }}>
-          <h2 className="text-lg font-black text-lila-900">Atención cercana</h2>
-          <p className="mt-2 text-sm text-neutral-600">Te asesoramos por WhatsApp para que tu pedido sea justo como lo imaginas.</p>
-        </article>
-      </div>
-
-      <div className="mt-12 rounded-3xl border border-white/60 bg-white/80 p-6 shadow-xl sm:p-8">
-        <div className="flex flex-wrap items-end justify-between gap-4">
-          <div>
-            <p className="text-xs font-extrabold uppercase tracking-[0.3em] text-lila-700">Destacados</p>
-            <h2 className="mt-2 text-2xl font-black text-lila-900 sm:text-3xl">Lo más querido por nuestros clientes</h2>
-          </div>
-          <Link
-            href="/catalogo"
-            className="rounded-xl bg-lila-100 px-4 py-2 text-sm font-bold text-lila-700 transition hover:bg-lila-200"
-          >
-            Ver todo
-          </Link>
-        </div>
-
-        {productosDestacados.length === 0 ? (
-          <p className="mt-6 rounded-2xl border border-dashed border-lila-200 bg-lila-50 p-5 text-sm font-semibold text-lila-800">
-            Estamos preparando nuevas piezas para el catálogo.
+          <h1 className="max-w-xl text-balance text-5xl font-black leading-[0.98] tracking-[-0.055em] text-lila-900 sm:text-7xl">
+            Detalles que se quedan contigo.
+          </h1>
+          <p className="mt-7 max-w-lg text-pretty text-lg leading-8 text-neutral-600 sm:text-xl">
+            Piezas tejidas a mano para celebrar lo que hace especial cada historia: un regalo, un recuerdo o simplemente un gesto de amor.
           </p>
-        ) : (
-          <div className="mt-6 grid gap-4 sm:grid-cols-3">
-            {productosDestacados.map((producto, index) => (
-              <Link
-                key={producto.id}
-                href={`/producto/${producto.id}`}
-                aria-label={`Ver detalles de ${producto.nombre}`}
-                className="reveal-up block overflow-hidden rounded-2xl border border-white/70 bg-white shadow-lg transition duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-lila-300/45"
-                style={{ animationDelay: `${110 + index * 70}ms` }}
-              >
-                <div className="relative aspect-square">
-                  <Image
-                    src={imagenPortada(producto)}
-                    alt={producto.nombre}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover"
-                  />
-                  {producto.imagenes.length > 1 && (
-                    <span className="absolute left-3 top-3 rounded-full bg-white/90 px-2.5 py-1 text-xs font-extrabold text-lila-700 shadow-sm backdrop-blur-sm">
-                      +{producto.imagenes.length - 1} foto
-                      {producto.imagenes.length > 2 ? "s" : ""}
-                    </span>
-                  )}
-                </div>
-                <div className="p-4">
-                  <h3 className="line-clamp-1 text-base font-black text-lila-900">{producto.nombre}</h3>
-                  <p className="mt-1 line-clamp-2 text-sm text-neutral-600">{producto.descripcion}</p>
-                  <p className="mt-3 text-lg font-black text-lila-700">{formatoCOP.format(producto.precio)}</p>
-                </div>
-              </Link>
-            ))}
+          <div className="mt-8 flex flex-wrap items-center gap-3">
+            <Link href="/catalogo" className="shine inline-flex items-center gap-2 rounded-full bg-lila-700 px-6 py-3.5 text-sm font-extrabold text-white shadow-xl shadow-lila-300/60 transition hover:-translate-y-1 hover:bg-lila-800">
+              Explorar colección <ArrowUpRight className="size-4" aria-hidden="true" />
+            </Link>
+            <span className="inline-flex items-center gap-2 px-3 py-3 text-sm font-bold text-lila-700">
+              <Heart className="size-4 fill-rosa-200 text-lila-600" aria-hidden="true" />
+              Creado con intención
+            </span>
           </div>
-        )}
-      </div>
-
-      <div className="mt-10 rounded-3xl border border-white/60 bg-gradient-to-r from-white to-lila-100/70 p-6 shadow-lg sm:p-8">
-        <h2 className="text-2xl font-black text-lila-900">Cómo encargar en 3 pasos</h2>
-        <div className="mt-5 grid gap-4 sm:grid-cols-3">
-          <div className="rounded-2xl bg-white/80 p-4 shadow">
-            <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-lila-700">Paso 1</p>
-            <p className="mt-2 text-sm font-semibold text-neutral-700">Explora el catálogo y guarda tus favoritos.</p>
-          </div>
-          <div className="rounded-2xl bg-white/80 p-4 shadow">
-            <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-lila-700">Paso 2</p>
-            <p className="mt-2 text-sm font-semibold text-neutral-700">Escríbenos por WhatsApp para definir colores, tamaño y entrega.</p>
-          </div>
-          <div className="rounded-2xl bg-white/80 p-4 shadow">
-            <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-lila-700">Paso 3</p>
-            <p className="mt-2 text-sm font-semibold text-neutral-700">Recibe una pieza única hecha con detalle y cariño.</p>
+          <div className="mt-12 flex flex-wrap gap-x-8 gap-y-4 border-t border-lila-200/70 pt-6 text-sm text-neutral-600">
+            <div><strong className="block text-xl font-black text-lila-900">100%</strong> hecho a mano</div>
+            <div><strong className="block text-xl font-black text-lila-900">1:1</strong> atención cercana</div>
+            <div><strong className="block text-xl font-black text-lila-900">∞</strong> detalles posibles</div>
           </div>
         </div>
-      </div>
-    </section>
+
+        <div className="relative mx-auto w-full max-w-md lg:max-w-none">
+          <div className="float-slow relative aspect-[0.86] overflow-hidden rounded-[2rem] border-[10px] border-white bg-lila-200 shadow-2xl shadow-lila-300/70">
+            <Image src={imagenPortada(productosDestacados[0] ?? catalogo[0])} alt={productosDestacados[0]?.nombre ?? "Pieza tejida a mano"} fill priority sizes="(max-width: 1024px) 90vw, 45vw" className="object-cover transition duration-700 hover:scale-105" />
+            <div className="absolute inset-x-4 bottom-4 rounded-2xl border border-white/50 bg-white/85 p-4 shadow-lg backdrop-blur-md">
+              <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-lila-600">Pieza destacada</p>
+              <p className="mt-1 text-lg font-black text-lila-900">Una historia tejida para ti</p>
+            </div>
+          </div>
+          <div className="absolute -left-3 top-10 rounded-2xl bg-rosa-100 px-4 py-3 text-sm font-black text-lila-800 shadow-lg sm:-left-8">Suave. Único. Especial.</div>
+          <div className="absolute -right-3 bottom-20 rounded-2xl border border-white bg-white px-4 py-3 text-sm font-black text-lila-800 shadow-lg sm:-right-8">Personalizable</div>
+        </div>
+      </section>
+
+      <section className="border-y border-white/70 bg-white/55 py-5">
+        <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-x-10 gap-y-3 px-4 text-center text-sm font-extrabold text-lila-700 sm:justify-between sm:px-6">
+          <span>Amigurumis con alma</span><span>Ramos que no se marchitan</span><span>Regalos con significado</span>
+        </div>
+      </section>
+
+      <section className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div><p className="text-xs font-extrabold uppercase tracking-[0.25em] text-lila-600">La colección</p><h2 className="mt-2 text-3xl font-black tracking-tight text-lila-900 sm:text-4xl">Pequeñas piezas, grandes emociones.</h2></div>
+          <Link href="/catalogo" className="inline-flex items-center gap-1 text-sm font-extrabold text-lila-700 transition hover:gap-2">Ver todo <ArrowUpRight className="size-4" aria-hidden="true" /></Link>
+        </div>
+        {productosDestacados.length > 0 ? <div className="mt-8 grid gap-5 sm:grid-cols-3">{productosDestacados.map((producto, index) => <Link key={producto.id} href={`/producto/${producto.id}`} className="reveal-up group overflow-hidden rounded-3xl border border-white/80 bg-white shadow-lg shadow-lila-200/40 transition duration-500 hover:-translate-y-2 hover:shadow-2xl" style={{ animationDelay: `${index * 100}ms` }}><div className="relative aspect-[0.95] overflow-hidden bg-lila-100"><Image src={imagenPortada(producto)} alt={producto.nombre} fill sizes="(max-width: 640px) 100vw, 33vw" className="object-cover transition duration-700 group-hover:scale-105" /></div><div className="flex items-center justify-between gap-3 p-5"><div><h3 className="font-black text-lila-900">{producto.nombre}</h3><p className="mt-1 line-clamp-1 text-sm text-neutral-500">{producto.descripcion}</p></div><span className="shrink-0 text-sm font-black text-lila-700">{formatoCOP.format(producto.precio)}</span></div></Link>)}</div> : <p className="mt-8 rounded-2xl border border-dashed border-lila-200 p-5 text-sm text-lila-800">Estamos preparando nuevas piezas para el catálogo.</p>}
+      </section>
+
+      <section className="mx-4 mb-16 rounded-[2rem] bg-lila-900 px-6 py-12 text-center text-white shadow-2xl shadow-lila-900/20 sm:mx-auto sm:max-w-6xl sm:px-12 sm:py-16">
+        <p className="text-xs font-extrabold uppercase tracking-[0.28em] text-rosa-200">Tu idea puede hacerse hilo</p>
+        <h2 className="mx-auto mt-4 max-w-2xl text-balance text-3xl font-black tracking-tight sm:text-5xl">Cuéntanos a quién quieres sorprender.</h2>
+        <p className="mx-auto mt-5 max-w-xl leading-7 text-lila-100">Te acompañamos a elegir colores, tamaño y detalles para crear una pieza que tenga tu historia.</p>
+        <a href={urlWhatsApp("una pieza personalizada")} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-extrabold text-lila-800 transition hover:-translate-y-1 hover:bg-rosa-100">Hablar por WhatsApp <ArrowUpRight className="size-4" aria-hidden="true" /></a>
+      </section>
+    </div>
   );
 }

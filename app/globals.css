@@ -29,8 +29,13 @@ body {
   background-attachment: fixed;
 }
 
+/* Subtle paper-like rhythm without changing page behavior. */
+main {
+  isolation: isolate;
+}
+
 ::selection {
-  background: rgba(186, 143, 188, 0.3);
+  background: rgba(164, 114, 167, 0.28);
 }
 
 .reveal-up {
