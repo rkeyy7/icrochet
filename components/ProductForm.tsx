@@ -160,7 +160,7 @@ export default function ProductForm({
             id="precio"
             name="precio"
             type="number"
-            min={1}
+            min={0}
             step={1000}
             required
             defaultValue={producto?.precio}
